@@ -76,7 +76,7 @@ spec:
                 path: application-github.properties
       
       initContainers:
-        - image: centos:7
+        - image: registry.cn-hangzhou.aliyuncs.com/smbands/alpine-bash:3.8
           imagePullPolicy: IfNotPresent
           name: check-service-apollo-config-server-dev
           command: ['bash', '-c', "/usr/bin/curl --connect-timeout 2 --max-time 5 --retry 60 --retry-delay 1 --retry-max-time 120 service-apollo-config-server-dev.sre:8080"]
