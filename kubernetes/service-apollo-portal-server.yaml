@@ -24,7 +24,7 @@ metadata:
 subsets:
   - addresses:
 #      # 更改为你的 mysql addresses, 例如 1.1.1.1
-      - ip: 192.168.199.12
+      - ip: MySQL主机IP地址
     ports:
       - protocol: TCP
         port: 3306
@@ -42,7 +42,7 @@ data:
     # mysql username
     spring.datasource.username = apollo
     # mysql password
-    spring.datasource.password = Ap@lloadmiN1
+    spring.datasource.password = 你的密码
   apollo-env.properties: |
     dev.meta=http://service-apollo-config-server-dev.sre:8080
 #    fat.meta=http://service-apollo-config-server-test-alpha.sre:8080
